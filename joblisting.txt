@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .job-listing {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .job-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .company-name {
+            font-size: 18px;
+            color: #6c757d;
+        }
+        .location {
+            font-size: 16px;
+            color: #495057;
+        }
+        .job-description {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #343a40;
+        }
+        .application-instructions {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #343a40;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="job-listing">
+        <div class="job-title">Software Developer</div>
+        <div class="company-name">Tech Solutions Inc.</div>
+        <div class="location">Baltimore, MD</div>
+        <div class="job-description">
+            <p>We are looking for a talented Software Developer to join our dynamic team. The ideal candidate will have experience in developing web applications, working with databases, and understanding of software development methodologies.</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Design, develop, and maintain web applications</li>
+                <li>Collaborate with cross-functional teams</li>
+                <li>Participate in code reviews and contribute to technical discussions</li>
+                <li>Troubleshoot and debug applications</li>
+            </ul>
+            <p>Requirements:</p>
+            <ul>
+                <li>Bachelor's degree in Computer Science or related field</li>
+                <li>Proficiency in JavaScript, HTML, CSS, and at least one backend language (e.g., Python, Java, Go)</li>
+                <li>Experience with databases (e.g., MySQL, PostgreSQL)</li>
+                <li>Strong problem-solving skills and attention to detail</li>
+            </ul>
+        </div>
+        <div class="application-instructions">
+            <p>To apply, please send your resume and cover letter to <a href="mailto:jobs@eaglestarbusiness.com">jobs@eaglestarbusiness.com </a>. We look forward to hearing from you!</p>
+        </div>
+        <a href="mailto:jobs@ eaglestarbusiness.com" class="apply-button">Apply Now</a>
+    </div>
+
+    <div class="job-listing">
+        <div class="job-title">Gas Station Cashier</div>
+        <div class="company-name">Baltimore Carroll Fuels</div>
+        <div class="location">Baltimore, MD</div>
+        <div class="job-description">
+            <p>We are seeking a reliable Gas Station Cashier to join our team. This role involves providing excellent customer service, processing transactions, and maintaining a clean and organized work environment.</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Greet and assist customers at the gas station</li>
+                <li>Process fuel and retail purchases accurately</li>
+                <li>Maintain cleanliness of the gas station and restock inventory as needed</li>
+                <li>Handle cash transactions and operate a point-of-sale (POS) system</li>
+            </ul>
+            <p>Requirements:</p>
+            <ul>
+                <li>High school diploma or equivalent</li>
+                <li>Previous experience in customer service or cashiering preferred</li>
+                <li>Ability to work in a fast-paced environment and maintain a friendly demeanor</li>
+                <li>Basic math skills and attention to detail</li>
+            </ul>
+        </div>
+        <div class="application-instructions">
+            <p>To inquire about this position, please contact us at <a href="mailto:jobs@eaglestarbusiness.com">jobs@eaglestarbusiness.com </a>. We look forward to hearing from you!</p>
+        </div>
+        <a href="mailto:jobs@eaglestarbusiness.com" class="apply-button">Apply Now</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Star Business Brokerage Inc</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header-container {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header-container .logo {
+            width: 150px;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .team-section img {
+            width: 100%;
+            height: auto;
+            max-height: 700px;
+            object-fit: cover;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button-container a {
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .about-section,
+        .services-section,
+        .why-choose-section,
+        .founder-message-section {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+        }
+
+        .founder-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive fixes */
+        @media (max-width: 768px) {
+            .header-container .logo {
+                width: 120px;
+                padding: 5px 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .button-container a {
+                font-size: 1.2rem;
+                padding: 8px 15px;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .button-container a {
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://raw.githubusercontent.com/techrecursive/Eagleproject/main/logo.webp" alt="Eagle Star" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="profile.html" class="nav-link">Teams</a></li>
+                        <li class="nav-item"><a href="jobs.html" class="nav-link">Jobs</a></li>
+                        <li class="nav-item"><a href="listings.html" class="nav-link">Listing</a></li>
+                        <li class="nav-item"><a href="other-services.html" class="nav-link">Other Services</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section class="team-section position-relative">
+        <div class="container-fluid text-center">
+            <img src="https://github.com/techrecursive/Eagleproject/blob/main/team.jpg?raw=true" alt="Team Image" class="img-fluid">
+            <!-- Buying and Selling Buttons -->
+            <div class="button-container">
+                <a href="listings.html" class="btn btn-outline-light">Buying</a>
+                <a href="contact.html" class="btn btn-outline-light">Selling</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Eagle Star Business Brokerage Inc</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <p>Eagle Star Business Brokerage Inc is a premier brokerage platform dedicated to facilitating the seamless buying and selling of businesses. With a commitment to excellence and a wealth of experience in the business brokerage industry, Eagle Star is the go-to destination for individuals and entrepreneurs looking to navigate the complex process of business transactions.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://raw.githubusercontent.com/techrecursive/Eagleproject/main/abouteagle.webp" alt="About Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Service Offered</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <img src="https://raw.githubusercontent.com/techrecursive/Eagleproject/main/abouteagle1.webp" alt="Service Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p>As a team of experienced business brokers and real estate agents, we specialize in helping clients buy or sell businesses and properties. We offer a comprehensive range of services, including accurately assessing the value of businesses and properties, effectively promoting them to potential buyers or sellers, skillfully negotiating deals to achieve the best possible outcomes, and guiding clients through the legal and financial aspects of transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Eagle Star Business Brokerage Inc</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <p>Our team of experienced brokers has a track record of success and a commitment to providing exceptional service. We understand the challenges and complexities of buying or selling a business and are dedicated to helping our clients achieve their goals.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://raw.githubusercontent.com/techrecursive/Eagleproject/main/abouteagle2.webp" alt="Why Choose Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Message Section -->
+    <section class="founder-message-section">
+        <div class="container">
+            <h2 class="section-title">Message From Founder</h2>
+            <div class="row section-content text-center">
+                <div class="col-md-12">
+                    <img src="founder.png" alt="Founder Image" class="founder-image">
+                    <p>With over 10 years of experience in the retail industry, I have established a reputation as a savvy businessman and a recognized expert in the field. Throughout my career, I have owned and operated nine successful retail businesses, each catering to a unique niche and boasting a loyal customer base.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eagle Star Business Brokerage Inc - All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

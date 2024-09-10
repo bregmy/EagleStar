@@ -1,0 +1,205 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header Styles */
+    .header {
+        background-color: #000;
+        color: #fff;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header img {
+        width: 150px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Main Section Styles */
+    .main-section {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .main-section img {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+    }
+
+    .main-section h1 {
+        font-size: 2.5em;
+        margin: 20px 0;
+    }
+
+    .main-section p {
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Content Blocks */
+    .content-blocks {
+        margin: 40px 0;
+    }
+
+    .content-block img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .content-block h3 {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .content-block p {
+        color: #777;
+    }
+
+    /* Reviews Section */
+    .reviews {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .review-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .review-card i {
+        font-size: 50px;
+        color: #999;
+    }
+
+    .review-card h4 {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .review-card .stars {
+        color: #ff9900;
+        margin-bottom: 10px;
+    }
+
+    .review-card p {
+        color: #777;
+        font-size: 0.9em;
+    }
+
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-card:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    }
+
+
+
+
+
+    
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header-container {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header-container .logo {
+            width: 150px;
+            display: block;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .nav-links li a:hover, .nav-links li a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .team-section img {
+            width: 100%;
+            height: auto;
+            max-height: 700px;
+            object-fit: cover;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button-container a {
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Star Business Brokerage Inc</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header-container {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header-container .logo {
+            width: 150px;
+            display: block;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .nav-links li a:hover, .nav-links li a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .team-section img {
+            width: 100%;
+            height: auto;
+            max-height: 700px;
+            object-fit: cover;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button-container a {
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }
+
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            padding: 20px 0;
+        }
+
+        .about-section, .services-section, .why-choose-section, .founder-message-section {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+        }
+
+        .founder-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive fixes */
+        @media (max-width: 768px) {
+            .header-container .logo {
+                width: 120px;
+                padding: 5px 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .button-container a {
+                font-size: 1.2rem;
+                padding: 8px 15px;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .button-container a {
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+
+        .job-listing {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .job-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .company-name {
+            font-size: 18px;
+            color: #6c757d;
+        }
+        .location {
+            font-size: 16px;
+            color: #495057;
+        }
+        .job-description {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #343a40;
+        }
+        .application-instructions {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #343a40;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="https://raw.githubusercontent.com/techrecursive/Eagleproject/main/logo.webp" alt="Eagle Star" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;">&#9776;</span>
+                </button>
+            </div>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-link">Teams</a></li>
+                    <li class="nav-item"><a href="jobs.html" class="nav-link">Jobs</a></li>
+                    <li class="nav-item"><a href="listings.html" class="nav-link">Listing</a></li>
+                    <li class="nav-item"><a href="other-services.html" class="nav-link">Other Services</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<body>
+    <div class="job-listing">
+        <div class="job-title">Software Developer</div>
+        <div class="company-name">Tech Solutions Inc.</div>
+        <div class="location">Baltimore, MD</div>
+        <div class="job-description">
+            <p>We are looking for a talented Software Developer to join our dynamic team. The ideal candidate will have experience in developing web applications, working with databases, and understanding of software development methodologies.</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Design, develop, and maintain web applications</li>
+                <li>Collaborate with cross-functional teams</li>
+                <li>Participate in code reviews and contribute to technical discussions</li>
+                <li>Troubleshoot and debug applications</li>
+            </ul>
+            <p>Requirements:</p>
+            <ul>
+                <li>Bachelor's degree in Computer Science or related field</li>
+                <li>Proficiency in JavaScript, HTML, CSS, and at least one backend language (e.g., Python, Java, Go)</li>
+                <li>Experience with databases (e.g., MySQL, PostgreSQL)</li>
+                <li>Strong problem-solving skills and attention to detail</li>
+            </ul>
+        </div>
+        <div class="application-instructions">
+            <p>To apply, please send your resume and cover letter to <a href="mailto:jobs@eaglestarbusiness.com">jobs@eaglestarbusiness.com </a>. We look forward to hearing from you!</p>
+        </div>
+        <a href="mailto:jobs@ eaglestarbusiness.com" class="apply-button">Apply Now</a>
+    </div>
+
+    <div class="job-listing">
+        <div class="job-title">Gas Station Cashier</div>
+        <div class="company-name">Baltimore Carroll Fuels</div>
+        <div class="location">Baltimore, MD</div>
+        <div class="job-description">
+            <p>We are seeking a reliable Gas Station Cashier to join our team. This role involves providing excellent customer service, processing transactions, and maintaining a clean and organized work environment.</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Greet and assist customers at the gas station</li>
+                <li>Process fuel and retail purchases accurately</li>
+                <li>Maintain cleanliness of the gas station and restock inventory as needed</li>
+                <li>Handle cash transactions and operate a point-of-sale (POS) system</li>
+            </ul>
+            <p>Requirements:</p>
+            <ul>
+                <li>High school diploma or equivalent</li>
+                <li>Previous experience in customer service or cashiering preferred</li>
+                <li>Ability to work in a fast-paced environment and maintain a friendly demeanor</li>
+                <li>Basic math skills and attention to detail</li>
+            </ul>
+        </div>
+        <div class="application-instructions">
+            <p>To inquire about this position, please contact us at <a href="mailto:jobs@eaglestarbusiness.com">jobs@eaglestarbusiness.com </a>. We look forward to hearing from you!</p>
+        </div>
+        <a href="mailto:jobs@eaglestarbusiness.com" class="apply-button">Apply Now</a>
+    </div>
+</body>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eagle Star Business Brokerage Inc - All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
